@@ -1,0 +1,48 @@
+## PRINT_ITEMS FUNCTION FOR O(n) ##
+def print_items(n):
+    for i in range(n):
+        print(i)      
+        
+# print_items(10)
+        
+
+## PRINT_ITEMS FUNCTION FOR O(2n) - Drop the Constant ##
+def print_items_constant(n):
+    for i in range(n):
+        print(i)
+
+    for j in range(n):
+        print(j)     
+        
+# print_items_constant(10)
+
+
+## PRINT_ITEMS FUNCTION FOR O(n)^2 ##
+def print_items_2(n):
+    for i in range(n):
+        for j in range(n):
+            print(i, j)      
+        
+# print_items_2(10)
+            
+
+## PRINT_ITEMS FUNCTION FOR O(n^2 + n) | n alone is non-dominant so it is not a problem ##
+def print_items_non_dominant(n):
+    for i in range(n):
+        for j in range(n):
+            print(i, j)
+
+    for k in range(n):
+        print(k)
+
+# print_items_non_dominant(10)
+
+## PRINT_ITEMS FUNCTION FOR O(1) ##
+def print_sum(n):
+    return n + n + n
+
+# print_sum(10)
+
+# FOR O(log n) - Divide and Conquer - example - find a number from a sorted list - divide and conquer the list until
+# For a sorted list of 8 numbers - 3 operations. 2^3=8. log8(base 2) = 3
+
